@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #202028;
+  color: #fff;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  padding: 10% 5% 3%;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.logo span {
+  color: orangered;
+}
+
+.description {
+  padding-block: 2rem;
+}
+
+.name {
+  font-size: 3.6rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.title span {
+  color: orangered;
+}
+
+.hero-btn {
+  background: orangered;
+  color: #fff;
+  padding: 0.8rem 1.8rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.hero-btn:hover {
+  background: rgb(221, 62, 4);
+  transition: all 0.5s ease;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.hero-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.section {
+  padding: 10% 5%;
+}
+
+.section-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.section-title span {
+  color: orangered;
+}
+
+.section-description {
+  font-weight: 300;
+  font-size: 1.4rem;
+  text-align: center;
+  line-height: 1.8;
+  margin-top: 1rem;
+}
+
+.section-title-container {
+  margin-bottom: 3rem;
+}
+
+.about-section {
+  background: #181818;
+  text-align: center;
+}
+
+.about-section .hero-btn {
+  margin-top: 3rem;
+}
+
+.articles-container ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.articles-container ul li {
+  border: 1px solid #c9c9c9;
+  padding: 1.5rem;
+  border-radius: 2rem;
+}
+
+.articles-container .article_title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+}
+
+.articles-container .article_description {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.article_btn {
+  color: orangered;
+  font-size: 1.4rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.contact_section {
+  background: #181818;
+}
+
+.socios {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.socios .social_link {
+  display: flex;
+  gap: 2rem;
+}
+
+.socios .social_link img {
+  width: 2.5rem;
+}
+
+.section-title-container {
+  text-align: center;
+}
+
+@media screen and (min-width: 900px) {
+  .hero {
+    padding: 4% 3%;
+  }
+
+  .hero-content {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .hero-img {
+    width: 60%;
+  }
+
+  .hero-content .description {
+    max-width: 60ch;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-img {
+    width: 40%;
+  }
+  .hero-content .description {
+    max-width: 60ch;
+  }
+
+  .hero-content {
+    gap: 5rem;
+  }
+
+  .hero-content .name {
+    font-size: 5.2rem;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  .hero-content .title {
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 1.8;
+  }
+
+  .section {
+    padding: 5%;
+  }
+
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section-title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-section .section-content {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 300;
+    max-width: 90ch;
+    margin-bottom: 1.2rem;
+  }
+
+  .section-title {
+    font-size: 2.8rem;
+    line-height: 0.8;
+  }
+
+  .articles-container ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .contact_section .socios {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 2rem;
+    flex-basis: 50%;
+  }
+}
